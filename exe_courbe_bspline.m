@@ -28,7 +28,7 @@
 % end
 % xp = [];
 % yp = [];
-% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2)
+% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2);
 
 % [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 % disp('xp dans exe');
@@ -48,7 +48,7 @@
 % n = length(x)-1;
 % N = n+k+1;
 % vecteur_noeud = 1:N;
-% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2)
+% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2);
 
 % [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 % figure;
@@ -63,7 +63,7 @@
 % x = [1 2 3 4];
 % y = [2 6 2 6];
 % vecteur_noeud = 1:N;
-% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2)
+% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2);
 
 % [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 % subplot(2, 1, 2)
@@ -90,7 +90,7 @@
 % % creation du vecteur noeuds "B-spline"
 % vecteur_noeud = zeros(n+1, 1);
 % vecteur_noeud = [vecteur_noeud; ones(m+1, 1)]
-% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2)
+% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2);
 
 % [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 % subplot(2, 1, 1)
@@ -111,7 +111,7 @@
 %
 % N = n+k+1;
 % vecteur_noeud = [1 2 1 2 3 5 6 7 8];
-% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2)
+% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2);
 
 % [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 %
@@ -128,7 +128,7 @@
 %
 % N = n+k+1;
 % vecteur_noeud = [1 2 3 4 5 6 7 8 9 10 11 12 13 14];
-% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2)
+% ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2);
 
 % [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 % subplot(2, 1, 2)
@@ -150,7 +150,7 @@ n = length(x)-1;
 
 N = n+k+1;
 vecteur_noeud = [1 2 3 4 5 6 7 8 9 10 11 12 13 14];
-ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2)
+ti = vecteur_noeud(k):0.01:vecteur_noeud(n+2);
 
 [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 subplot(2, 1, 1)
@@ -166,7 +166,7 @@ n = length(x)-1;
 
 N = n+k+1;
 vecteur_noeud = [1 2 3 4 5 6 7 8 9 10 11 12 13 14];
-ti = vecteur_noeud(k):1:vecteur_noeud(n+2)
+ti = vecteur_noeud(k):1:vecteur_noeud(n+2);
 
 [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 subplot(2, 1, 2)
@@ -183,7 +183,7 @@ n = length(x)-1;
 
 N = n+k+1;
 vecteur_noeud = [1 2 3 4 5 6 7 8 9 10 11 12 13 14];
-ti = vecteur_noeud(k):0.01:50
+ti = vecteur_noeud(k):0.01:15;
 
 [xp, yp] = courbe_bspline(m, x, y, vecteur_noeud, ti);
 plot(xp, yp);
